@@ -17,3 +17,10 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
 })
+
+const questions = require('./data/questions')
+
+// GET /api/questions — returns all questions
+app.get('/api/questions', (req, res) => {
+  res.json(questions)
+})
