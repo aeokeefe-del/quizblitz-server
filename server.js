@@ -9,6 +9,7 @@ const PORT = 3000
 const User = require('./models/User')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const verifyToken = require('./middleware/verifyToken')
 
 // Middleware
 app.use(cors())
