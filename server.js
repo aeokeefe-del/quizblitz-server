@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const questions = require('./data/questions')
 const app = express()
 const PORT = 3000
+const User = require('./models/User')
 
 // Middleware
 app.use(cors())
