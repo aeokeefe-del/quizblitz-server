@@ -60,5 +60,4 @@ const questions = [
         correct: 1,
     }
 ]
-
 module.exports = questions
