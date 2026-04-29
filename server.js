@@ -1,4 +1,5 @@
 require('dotenv').config({ path: require('path').resolve(__dirname, '.env'), override: true })
+console.log('ENV CHECK:', Object.keys(process.env).filter(k => ['MONGODB_URI','JWT_SECRET','JWT_EXPIRES_IN','PORT'].includes(k)))
 const Score = require('./models/Score')
 const express = require('express')
 const cors = require('cors')
