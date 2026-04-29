@@ -12,7 +12,14 @@ const jwt = require('jsonwebtoken')
 const verifyToken = require('./middleware/verifyToken')
 
 // Middleware
-app.use(cors())
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://aeokeefe-del.github.io'
+]
+
+app.use(cors({
+  origin: allowedOrigins
+}))
 app.use(express.json())
 
 // Test route
