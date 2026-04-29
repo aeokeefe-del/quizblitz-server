@@ -1,0 +1,30 @@
+**Claude** Prompt: error is occuring connecting database in railway,
+the specific error is as follows: MongoDB connection failed: The `uri` 
+parameter to `openUri()` must be a string, got "undefined". Make sure 
+the first parameter to `mongoose.connect()` or `mongoose.createConnection()` 
+is a string. what is the best way to solve?
+
+the response to first prompt asked about active IP addresses for database so 
+I responded with: 
+**Claude** Prompt: i have two active ip addresses one is 0.0.0/0
+
+**Claude** Prompt: (provided specs of cluster to help with debugging) 
+Version
+8.0.21
+Region
+AWS / Frankfurt (eu-central-1)
+Type
+Replica Set - 3 nodes
+Backups
+Inactive
+Linked App Services
+None Linked
+Atlas SQL
+Connect
+Atlas Search
+1 search index
+
+**Claude** Prompt: (was confused by crash log) what does 
+this mean: npm warn config production Use `--omit=dev` instead.
+
+(discovered my bug was a typo in a variable, by one character)
